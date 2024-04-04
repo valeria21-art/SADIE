@@ -1,0 +1,26 @@
+
+POST http://localhost:3000/api/materias HTTP/1.1
+Content-Type: application/json
+
+{
+    "idmaterias":"M001",
+    "materias":"Ingles"
+}
+
+###
+GET http://localhost:3000/api/materias HTTP/1.1
+
+###
+GET http://localhost:3000/api/materias/6545dfe81581e1593790dd2e HTTP/1.1
+
+###
+PUT http://localhost:3000/api/materias/6545bc107fa59662e9dc6113 HTTP/1.1
+content-Type: application/json
+
+{
+    "idmaterias":"M002",
+    "materias":"Fisica"
+}
+
+###
+DELETE http://localhost:3000/api/materias/6545c41c668a7293ea37fbd8 HTTP/1.1

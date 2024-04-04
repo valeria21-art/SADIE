@@ -1,0 +1,28 @@
+
+POST http://localhost:3000/api/permisos HTTP/1.1
+Content-Type: application/json
+
+{
+    "ndoc":"1025954290",
+    "idrol":"Estudiante",
+    "estado":"Aceptado"
+}
+
+###
+GET http://localhost:3000/api/permisos HTTP/1.1
+
+###
+GET http://localhost:3000/api/permisos/6545dfe81581e1593790dd2e HTTP/1.1
+
+###
+PUT http://localhost:3000/api/permisos/6553ce9e8b751d57d5dbcc1b HTTP/1.1
+content-Type: application/json
+
+{
+    "ndoc":"1025954290",
+    "idrol":"Estudiante",
+    "estado":"Aprobado"
+}
+
+###
+DELETE http://localhost:3000/api/permisos/6545c41c668a7293ea37fbd8 HTTP/1.1

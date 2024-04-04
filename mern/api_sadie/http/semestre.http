@@ -1,0 +1,29 @@
+POST http://localhost:3000/api/semestre HTTP/1.1
+Content-Type: application/json
+
+{
+    "idsemestre":"S101",
+    "semestreformacion":"IV"
+
+}
+
+###
+GET http://localhost:3000/api/semestre HTTP/1.1
+
+###
+GET http://localhost:3000/api/semestre/6545d7b65c7deadc7a744b27 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/semestre/6553ca04de6066cb628f4fa3 HTTP/1.1
+content-Type: application/json
+
+{
+   
+    "idsemestre": "S102",
+    "semestreformacion":"III"
+   
+  }
+
+###
+DELETE http://localhost:3000/api/semestre/6545d7995c7deadc7a744b25 HTTP/1.1
+

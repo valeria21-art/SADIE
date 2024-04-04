@@ -1,0 +1,30 @@
+
+POST http://localhost:3000/api/tipodocumento HTTP/1.1
+Content-Type: application/json
+
+{
+    "tdoc":"CE",
+    "desc_tdoc":"Cedula de Extranjería",
+    "tdoc_estado":"1"
+}
+
+###
+GET http://localhost:3000/api/tipodocumento/ HTTP/1.1
+
+###
+GET http://localhost:3000/api/tipodocumento/6545bcfe7fa59662e9dc6121 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/tipodocumento/660ba38c2bfd48f7fe76c473 HTTP/1.1
+content-Type: application/json
+
+
+{
+    "tdoc":"TI",
+    "desc_tdoc":"Tarjeta de Identidad",
+    "tdoc_estado":"1"
+}
+
+###
+DELETE http://localhost:3000/api/tipodocumento/654c44d89ac21a637e579aa7 HTTP/1.1
+
